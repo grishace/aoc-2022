@@ -21,7 +21,7 @@ let crates ()= [|
         ] |> List.rev
     |]
 
-let rx = Regex("move (\d+) from (\d+) to (\d+)", RegexOptions.Compiled)
+let rx = Regex("move (\\d+) from (\\d+) to (\\d+)", RegexOptions.Compiled)
 
 let commands  = 
     input.[emptyLine+1..input.Length-1]
